@@ -276,3 +276,31 @@ a {
     transform: translateX(45%); /* Changed from 100% */
   }
 }
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px;
+}
+
+.project-link {
+  transition: all 0.3s;
+}
+
+.project-link:hover {
+  color: rgb(221, 123, 123);
+}
+
+.socials-link {
+  transition: color 0.5s;
+}
+
+.socials-link:hover {
+  color: rgb(221, 123, 123);
+}

@@ -11,7 +11,7 @@ type SocialProps = {
 function Social({title, link, content}:SocialProps) {
     return (
         <div>
-        <a href={link} target="_blank"><p>{title}</p></a>
+        <a className='socials-link' href={link} target="_blank"><p>{title}</p></a>
         <p>{content}</p>
         </div>
     )
@@ -58,7 +58,7 @@ export default function Socials() {
     return (
         <div className="page flex-column-center">
             <div className="page-content socials-container">
-                <h1 onClick={nextPage}>my socials</h1>
+                <h1 onClick={nextPage}>My Socials</h1>
                 <div className={`socials-page ${animation}`}>{pages[currentPage]}</div>
 
                 <div className="navigate-socials">
