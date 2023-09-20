@@ -5,6 +5,7 @@ import Socials from './Socials'
 import Home from './Home'
 import Hobbies from './Hobbies'
 import Projects from './Projects'
+import Application from './Application'
 
 
 type FirstPartProps = {
@@ -34,6 +35,7 @@ export default function Body() {
     const hobbiesRef = useRef<HTMLDivElement>(null)
     const socialsRef = useRef<HTMLDivElement>(null)
     const projectsRef = useRef<HTMLDivElement>(null)
+    const applicationRef = useRef<HTMLDivElement>(null)
 
     const scrollToHome = () => {
         homeRef.current?.scrollIntoView({behavior: 'smooth'})
@@ -51,10 +53,15 @@ export default function Body() {
         projectsRef.current?.scrollIntoView({behavior: 'smooth'})
     }
 
+    const scrollToApplication = () => {
+        applicationRef.current?.scrollIntoView({behavior: 'smooth'})
+    }
+
 
     return (
         <>
-            <div><FirstPart scrollToHome={scrollToHome}/></div>
+            <div><FirstPart scrollToHome={scrollToApplication}/></div>
+            <div ref={applicationRef}><Application /></div>
             <div ref={homeRef}><Home scrollToHobbies={scrollToHobbies} scrollToSocials={scrollToSocials} scrollToProjects={scrollToProjects}/></div>
             <div ref={hobbiesRef}><Hobbies /> </div>
             <div ref={socialsRef}><Socials /></div>

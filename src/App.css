@@ -7,6 +7,7 @@
   background-color: #282c34;
   min-height: 100vh;
   color: white;
+  font-size: 18px;
 }
 
 /* HEADER STUFF */
@@ -287,6 +288,7 @@ a {
   display: flex;
   flex-direction: column;
   margin: 0px 10px;
+  font-size: 14px;
 }
 
 .project-link {
@@ -304,3 +306,49 @@ a {
 .socials-link:hover {
   color: rgb(221, 123, 123);
 }
+
+.application-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.page-header {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #3d424d;
+}
+
+.intro-text {
+  margin-bottom: 10px;
+  font-weight: 400;
+  
+}
+
+.motivation-text, .plan-text {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.section {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #252931;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.section-list {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+

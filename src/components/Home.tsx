@@ -10,8 +10,8 @@ export default function Home({scrollToHobbies, scrollToSocials, scrollToProjects
     return (
         <div className="page flex-column-center">
             <div className="page-content">
-                <h1>Hi, I'm Kieren</h1>
-                <p>I'm a 1st year computer science student</p>
+                <h1>Here's a few links to the rest of my page!</h1>
+                {/* <p>I'm a 1st year computer science student</p> */}
                 <div className="page-2-navigation">
                     <h3 className="nav-title" onClick={scrollToHobbies}>My Hobbies</h3>
                     <h3 className="nav-title" onClick={scrollToSocials}>My Socials</h3>
